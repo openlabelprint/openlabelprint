@@ -1,0 +1,88 @@
+	------
+	Stopwatch documentation
+	------
+	Milen Dyankov
+	------
+	
+
+Stopwatch usage
+~~~~~~~~~~~~~~~
+
+
+* Required 3rd party libraries
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	[ HSQLDB ] 
+	Currently all engines provided by default with Stopwatch use {{{http://www.hsqldb.org/}HSQL}} database 
+	for persisting collected data.
+
+	[ Log4J ]
+	Stopwatch uses Log4j logging library. 
+
+	There are 2 JAR files provided in Stopwatch distribution:
+	
+	* <<<stopwatch-{version}.jar>>> - contains only Stopwatch files. All libraries listed above need to be on the classpath.
+	
+	* <<<stopwatch-{version}-with-deps.jar>>> - contains Stopwatch files plus all dependencies.
+	
+
+* Basic usage 
+~~~~~~~~~~~~~~
+
+	As mentioned on QuickStart page Stopwatch is very simple to use.
+	Here is very basic example:
+
++-----------------------------------------------------------------------------+
+	Stopwatch.setActive(true);			
+	long id = Stopwatch.start("my group", "my label");
+		// some code to be measured
+	Stopwatch.stop(id);
+	Report report = Stopwatch.getSingleReport("my group", "my label");
+	System.out.print(report);
++-----------------------------------------------------------------------------+
+
+
+
+* Skipping measurements
+~~~~~~~~~~~~~~~~~~~~~~~~
+	Sometimes there is a need to skip some measurements. For example one may not want to measure
+	situations where an exception is thrown. Here is simple example of how to generete
+	different reports for even and odd iterations of the loop:
+	
++-----------------------------------------------------------------------------+	
+	Stopwatch.setActive(true);
+	for (int count = 0; count &lt; 21; count++) { 
+		long odd_id = Stopwatch.start("my group", "odd");
+		long even_id = Stopwatch.start("my group", "even");
+		
+			// ..... 
+					
+		if (count % 2 == 0) {
+			Stopwatch.skip(odd_id)
+			Stopwatch.stop(even_id);
+		} else {
+			Stopwatch.skip(even_id)
+			Stopwatch.stop(odd_id);
+		}
+	}
+	Report[] reports = Stopwatch.getGroupReports("my group");
+	System.out.print(reports[0] + "\n" + reports[1]);
++-----------------------------------------------------------------------------+	
+
+
+
+* Load reports
+~~~~~~~~~~~~~~
+	As of version 0.3 there are new methods providing load reports. Load report is one that says how many instances of 
+	given measured code were running at given time interval. 
+	For example to see how many times measured code in group "g" labeled "l" was executed per minute in last 30 minutes, one could use:
+
++-----------------------------------------------------------------------------+	
+	long[] load = Stopwatch.getLoad("g", "l", Calendar.MINUTE, 30);
++-----------------------------------------------------------------------------+	
+ 
+	In this case load[0] will contain the number of code instances running 30 minutes ago and load[29] number of code instances 
+	running in the last minute.
+
+	
+
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false" threshold="debug">
+
+    <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <!-- Output the elapsed time [thread,context] Priority Class::Method - Text LF -->
+            <param name="ConversionPattern" value="%-4r [%t] %-5p %c{1}::%M - %m%n"/>
+        </layout>
+    </appender>
+    
+    <root>
+        <level value="debug"/>
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</log4j:configuration>

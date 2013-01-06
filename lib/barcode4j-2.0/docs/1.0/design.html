@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="Apache Forrest" name="Generator">
+<meta name="Forrest-version" content="0.9-dev">
+<meta name="Forrest-skin-name" content="pelt">
+<title>Design notes</title>
+<link type="text/css" href="../skin/basic.css" rel="stylesheet">
+<link media="screen" type="text/css" href="../skin/screen.css" rel="stylesheet">
+<link media="print" type="text/css" href="../skin/print.css" rel="stylesheet">
+<link type="text/css" href="../skin/profile.css" rel="stylesheet">
+<script src="../skin/getBlank.js" language="javascript" type="text/javascript"></script><script src="../skin/getMenu.js" language="javascript" type="text/javascript"></script><script src="../skin/fontsize.js" language="javascript" type="text/javascript"></script>
+<link rel="shortcut icon" href="../images/favicon.ico">
+</head>
+<body onload="init()">
+<script type="text/javascript">ndeSetTextSize();</script>
+<div id="top">
+<!--+
+    |header
+    +-->
+<div class="header">
+<!--+
+    |start group logo
+    +-->
+<div class="grouplogo">
+<a href="http://barcode4j.sourceforge.net/"><img class="logoImage" alt="Barcode4J" src="../resources/images/barcode4j-logo.gif" title="A free barcode generator written in Java"></a>
+</div>
+<!--+
+    |end group logo
+    +-->
+<!--+
+    |start Project Logo
+    +-->
+<div class="projectlogo">
+<a href="http://barcode4j.sourceforge.net/"><img class="logoImage" alt="" src="../skin/images/spacer.gif" title=""></a>
+</div>
+<!--+
+    |end Project Logo
+    +-->
+<!--+
+    |start Search
+    +-->
+<div class="searchbox">
+<form action="http://www.google.com/search" method="get" class="roundtopsmall">
+<input value="barcode4j.sourceforge.net" name="sitesearch" type="hidden"><input onFocus="getBlank (this, 'Search the site with google');" size="25" name="q" id="query" type="text" value="Search the site with google">&nbsp; 
+                    <input name="Search" value="Search" type="submit">
+</form>
+</div>
+<!--+
+    |end search
+    +-->
+<!--+
+    |start Tabs
+    +-->
+<ul id="tabs">
+<li>
+<a class="unselected" href="../index.html">Home</a>
+</li>
+<li class="current">
+<a class="selected" href="../1.0/index.html">Version 1.0</a>
+</li>
+<li>
+<a class="unselected" href="../2.0/index.html">Version 2.0</a>
+</li>
+</ul>
+<!--+
+    |end Tabs
+    +-->
+</div>
+</div>
+<div id="main">
+<div id="publishedStrip">
+<!--+
+    |start Subtabs
+    +-->
+<div id="level2tabs"></div>
+<!--+
+    |end Endtabs
+    +-->
+<script type="text/javascript"><!--
+document.write("Last Published: " + document.lastModified);
+//  --></script>
+</div>
+<!--+
+    |breadtrail
+    +-->
+<div class="breadtrail">
+<a href="http://www.sf.net/projects/barcode4j/">SourceForge Project Page</a><script src="../skin/breadcrumbs.js" language="JavaScript" type="text/javascript"></script>
+</div>
+<!--+
+    |start Menu, mainarea
+    +-->
+<!--+
+    |start Menu
+    +-->
+<div id="menu">
+<div onclick="SwitchMenu('menu_selected_1.1', '../skin/')" id="menu_selected_1.1Title" class="menutitle" style="background-image: url('../skin/images/chapter_open.gif');">Version 1.0</div>
+<div id="menu_selected_1.1" class="selectedmenuitemgroup" style="display: block;">
+<div class="menuitem">
+<a href="../1.0/index.html">Overview</a>
+</div>
+<div onclick="SwitchMenu('menu_1.1.2', '../skin/')" id="menu_1.1.2Title" class="menutitle">Getting started</div>
+<div id="menu_1.1.2" class="menuitemgroup">
+<div class="menuitem">
+<a href="../1.0/building.html">Build&nbsp;Barcode4J</a>
+</div>
+<div class="menuitem">
+<a href="../1.0/running.html">Run&nbsp;Barcode4J</a>
+</div>
+</div>
+<div class="menuitem">
+<a href="../1.0/barcode-xml.html">The Barcode XML Format</a>
+</div>
+<div class="menuitem">
+<a href="../1.0/output-formats.html">Output Formats</a>
+</div>
+<div class="menupage">
+<div class="menupagetitle">Design</div>
+</div>
+<div class="menuitem">
+<a href="http://barcode4j.sourceforge.net/javadocs/index.html">Javadocs</a>
+</div>
+<div onclick="SwitchMenu('menu_1.1.7', '../skin/')" id="menu_1.1.7Title" class="menutitle">Scenarios</div>
+<div id="menu_1.1.7" class="menuitemgroup">
+<div class="menuitem">
+<a href="../1.0/xsl-fo.html">XSL-FO</a>
+</div>
+<div class="menuitem">
+<a href="../1.0/svg-dom.html">SVG DOM</a>
+</div>
+</div>
+<div onclick="SwitchMenu('menu_1.1.8', '../skin/')" id="menu_1.1.8Title" class="menutitle">Creating&nbsp;Barcodes</div>
+<div id="menu_1.1.8" class="menuitemgroup">
+<div class="menuitem">
+<a href="../1.0/fop-ext.html">...with FOP</a>
+</div>
+<div class="menuitem">
+<a href="../1.0/xalan-ext.html">...with Xalan-J</a>
+</div>
+<div class="menuitem">
+<a href="../1.0/saxon-ext.html">...with SAXON</a>
+</div>
+<div class="menuitem">
+<a href="../1.0/servlet.html">...with a Servlet</a>
+</div>
+<div class="menuitem">
+<a href="../1.0/cli.html">...from the Command Line</a>
+</div>
+<div class="menuitem">
+<a href="../1.0/embedding.html">...embedding in Java (XML API)</a>
+</div>
+<div class="menuitem">
+<a href="../1.0/embedding-bean.html">...embedding in Java (Bean API)</a>
+</div>
+</div>
+</div>
+<div id="credit"></div>
+<div id="roundbottom">
+<img style="display: none" class="corner" height="15" width="15" alt="" src="../skin/images/rc-b-l-15-1body-2menu-3menu.png"></div>
+<!--+
+  |alternative credits
+  +-->
+<div id="credit2"></div>
+</div>
+<!--+
+    |end Menu
+    +-->
+<!--+
+    |start content
+    +-->
+<div id="content">
+<div title="Portable Document Format" class="pdflink">
+<a class="dida" href="design.pdf"><img alt="PDF -icon" src="../skin/images/pdfdoc.gif" class="skin"><br>
+        PDF</a>
+</div>
+<h1>Design notes</h1>
+<div id="front-matter">
+<div id="minitoc-area">
+<ul class="minitoc">
+<li>
+<a href="#Requirements">Requirements</a>
+</li>
+<li>
+<a href="#Package+overview">Package overview</a>
+<ul class="minitoc">
+<li>
+<a href="#org.krysalis.barcode4j">org.krysalis.barcode4j</a>
+<ul class="minitoc">
+<li>
+<a href="#Main+interfaces">Main interfaces</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#org.krysalis.barcode4j.impl">org.krysalis.barcode4j.impl</a>
+</li>
+<li>
+<a href="#org.krysalis.barcode4j.output+%28and+subpackages%29">org.krysalis.barcode4j.output (and subpackages)</a>
+</li>
+<li>
+<a href="#org.krysalis.barcode4j.tools">org.krysalis.barcode4j.tools</a>
+</li>
+<li>
+<a href="#org.krysalis.barcode4j.cli">org.krysalis.barcode4j.cli</a>
+</li>
+<li>
+<a href="#org.krysalis.barcode4j.servlet">org.krysalis.barcode4j.servlet</a>
+</li>
+<li>
+<a href="#org.krysalis.barcode4j.xalan">org.krysalis.barcode4j.xalan</a>
+</li>
+<li>
+<a href="#org.krysalis.barcode4j.saxon">org.krysalis.barcode4j.saxon</a>
+</li>
+<li>
+<a href="#org.krysalis.barcode4j.playground">org.krysalis.barcode4j.playground</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+    
+<a name="N10014"></a><a name="Requirements"></a>
+<h2 class="underlined_10">Requirements</h2>
+<div class="section">
+<ul>
+        
+<li>
+          The whole barcode package shall be flexible and extensible. New implementations 
+          (barcode type or output format) should be easy to add.
+        </li>
+        
+<li>
+          The design shall be done in a way that different barcode types (1D vs. 2D) can 
+          be supported.
+        </li>
+        
+<li>
+          The barcodes implementations shall be configured using XML and in a way that
+          the whole package can easily be integrated into a bigger work.
+        </li>
+        
+<li>
+          The barcode logic (checksums, encoding, character sets etc.) shall be separated
+          from the rendering of the barcode so different output formats (SVG, bitmaps etc.)
+          can easily be supported.
+        </li>
+      
+</ul>
+</div>
+    
+<a name="N1002A"></a><a name="Package+overview"></a>
+<h2 class="underlined_10">Package overview</h2>
+<div class="section">
+<a name="N10030"></a><a name="org.krysalis.barcode4j"></a>
+<h3 class="underlined_5">org.krysalis.barcode4j</h3>
+<p>This package holds the primary interfaces for generating barcodes.</p>
+<a name="N10039"></a><a name="Main+interfaces"></a>
+<h4>Main interfaces</h4>
+<ul>
+            
+<li>
+<strong>BarcodeGenerator</strong>: Main interface for generating barcodes.</li>
+            
+<li>
+<strong>BarcodeClassResolver</strong>: Resolves symbolic names to barcode implementation classes.</li>
+            
+<li>
+              
+<strong>BarcodeLogicHandler</strong>: Receives barcode events (similar to SAX events for XML) 
+              generated by barcode logic implementations.
+            </li>
+          
+</ul>
+<p>
+<strong>BarcodeUtil</strong> is an very useful helper class. Have a look!</p>
+<a name="N10059"></a><a name="org.krysalis.barcode4j.impl"></a>
+<h3 class="underlined_5">org.krysalis.barcode4j.impl</h3>
+<p>
+          This package is the home of the standard barcode implementations. Each implementation 
+          consist mostly of two classes, a logic implementation and a presentation implementation. 
+          The presentation part calls the logic part to generate something similar to SAX events
+          but for barcodes (See <strong>BarcodeLogicHandler</strong>).
+        </p>
+<a name="N10066"></a><a name="org.krysalis.barcode4j.output+%28and+subpackages%29"></a>
+<h3 class="underlined_5">org.krysalis.barcode4j.output (and subpackages)</h3>
+<p>
+          This is where the various output formats are implemented. To implement a new 
+          coordinate-based output format the main task is to create a new CanvasProvider 
+          implementation.
+        </p>
+<a name="N10070"></a><a name="org.krysalis.barcode4j.tools"></a>
+<h3 class="underlined_5">org.krysalis.barcode4j.tools</h3>
+<p>
+          This package contains various helper classes used internally.
+        </p>
+<a name="N1007A"></a><a name="org.krysalis.barcode4j.cli"></a>
+<h3 class="underlined_5">org.krysalis.barcode4j.cli</h3>
+<p>
+          This package contains the command-line interface.
+        </p>
+<a name="N10084"></a><a name="org.krysalis.barcode4j.servlet"></a>
+<h3 class="underlined_5">org.krysalis.barcode4j.servlet</h3>
+<p>
+          This package contains the barcode servlet.
+        </p>
+<a name="N1008E"></a><a name="org.krysalis.barcode4j.xalan"></a>
+<h3 class="underlined_5">org.krysalis.barcode4j.xalan</h3>
+<p>
+          This package contains the XSLT extension for <a class="external" href="http://xml.apache.org/xalan-j/">Apache Xalan</a>.
+        </p>
+<a name="N1009C"></a><a name="org.krysalis.barcode4j.saxon"></a>
+<h3 class="underlined_5">org.krysalis.barcode4j.saxon</h3>
+<p>
+          This package contains the XSLT extension for the <a class="external" href="http://saxon.sourceforge.net">SAXON XSLT Processor by Michael Kay</a>.
+        </p>
+<a name="N100AA"></a><a name="org.krysalis.barcode4j.playground"></a>
+<h3 class="underlined_5">org.krysalis.barcode4j.playground</h3>
+<p>
+          This package contains the playground GUI application. It's used to play around with 
+          barcodes. Have fun!
+        </p>
+<div class="note">
+<div class="label">Note</div>
+<div class="content">This is work in progress! Help wanted! Be creative!</div>
+</div>
+</div>
+  
+<p align="right">
+<font size="-2">by&nbsp;Jeremias M&auml;rki</font>
+</p>
+</div>
+<!--+
+    |end content
+    +-->
+<div class="clearboth">&nbsp;</div>
+</div>
+<div id="footer">
+<!--+
+    |start bottomstrip
+    +-->
+<div class="lastmodified">
+<script type="text/javascript"><!--
+document.write("Last Published: " + document.lastModified);
+//  --></script>
+</div>
+<div class="copyright">
+        Copyright &copy;
+         2003-2008 The Barcode4J Project.</div>
+<div class="host">
+<a href="http://sourceforge.net"><img class="logoImage" alt="" src="http://sourceforge.net/sflogo.php?&group_id=36516&type=1"></a>
+</div>
+<!--+
+    |end bottomstrip
+    +-->
+</div>
+</body>
+</html>

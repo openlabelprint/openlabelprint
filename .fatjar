@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Thu Dec 18 09:59:37 GMT 2008
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=olplauncher.jar
+manifest.mergeall=true
+manifest.mainclass=com.xyratex.apps.daemon.XyOLPLauncher
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=<po|xyratexlabelling>~com/~xyratex/~label/~apps/~aspectmigration/
+includes=

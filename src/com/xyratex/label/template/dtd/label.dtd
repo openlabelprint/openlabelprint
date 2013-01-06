@@ -1,0 +1,12 @@
+<!ELEMENT barcode EMPTY >
+<!ATTLIST barcode id NMTOKEN #REQUIRED >
+
+<!ELEMENT field ( barcode | human-readable )* >
+<!ATTLIST field description NMTOKEN #REQUIRED >
+<!ATTLIST field value NMTOKEN #REQUIRED >
+
+<!ELEMENT human-readable EMPTY >
+<!ATTLIST human-readable id NMTOKEN #REQUIRED >
+
+<!ELEMENT label ( field+ ) >
+<!ATTLIST label id CDATA #REQUIRED >

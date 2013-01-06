@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.6" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="XyOffsetLabel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="XyOffsetUpJButton" min="-2" max="-2" attributes="0"/>
+              <Component id="XyOffsetDownJButton" min="-2" max="-2" attributes="0"/>
+              <Component id="XyOffsetLeftJButton" min="-2" max="-2" attributes="0"/>
+              <Component id="XyOffsetRightJButton" min="-2" max="-2" attributes="0"/>
+              <Component id="XyOffsetResetJButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
+              <Component id="XyOffsetLoadJButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
+              <Component id="XyOffsetSaveJButton" min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+              <Component id="XyOffsetUpJButton" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+              <Component id="XyOffsetLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+          </Group>
+          <Component id="XyOffsetDownJButton" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+          <Component id="XyOffsetLeftJButton" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+          <Component id="XyOffsetRightJButton" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+              <Component id="XyOffsetResetJButton" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+              <Component id="XyOffsetLoadJButton" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+              <Component id="XyOffsetSaveJButton" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="XyOffsetUpJButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="up"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="XyOffsetUpJButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="XyOffsetDownJButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="down"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="XyOffsetDownJButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="XyOffsetLeftJButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="left"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="XyOffsetLeftJButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="XyOffsetRightJButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="right"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="XyOffsetRightJButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="XyOffsetResetJButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="reset"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="XyOffsetResetJButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="XyOffsetLoadJButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="load offsets"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="XyOffsetLoadJButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="XyOffsetSaveJButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="save offsets"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="XyOffsetSaveJButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="XyOffsetLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Offsetting"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

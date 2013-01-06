@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE rss PUBLIC "-//Netscape Communications//DTD RSS 0.91//EN" "http://my.netscape.com/publish/formats/rss-0.91.dtd">
+<rss version="0.91"><channel><title>MyProject (2.0) Changes</title><link>http://myproj.mygroup.org//changes.html</link><description>MyProject
+              (
+              2.0
+              ) Changes
+            </description><language>en-us</language>
+
+  
+    
+    
+    
+    
+    
+  
+
+  
+
+  
+    
+    
+    
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added support for the Code 39 extended character set.
+      </description></item>      
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added support for left, right, center and justify alignment of the human-readable part.
+      </description></item>      
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added an implementation for USPS Intelligent Mail (4-State Customer Barcode).
+      </description></item>      
+      <item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        buerkle
+        :
+        
+        Various improvements and bugfixes for EAN-128.  
+      </description></item>      
+      <item><title>MyProject code fix
+          (bug 1945793)
+        </title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+          (fixes bug 1945793)
+        
+        :
+        
+        Bugfix for text painting at small text sized when anti-aliasing is disabled.
+      </description></item>      
+      <item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+        Fixed two bugs concerning Base 256 encoding (DataMatrix).  
+      </description></item>      
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added auto-sizing feature for PDF417 with an option to specify the width-to-height ration
+        for the symbol.
+       Thanks to Branko van Abel.</description></item>      
+      <item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+        Improved Code128 encoding results in smaller barcodes in some cases.  
+       Thanks to Branko van Abel.</description></item>      
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added support for Macro 05/06 character abbreviation (DataMatrix).
+      </description></item>
+      <item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+        Fixed pattern handling: Trailing pattern text was omitted.  
+      </description></item>      
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added the possibility to restrict the generation of DataMatrix to square or rectangular
+        symbols.  
+       Thanks to Trevor Spiteri.</description></item>      
+      <item><title>MyProject code fix
+          (bug 1698523)
+        </title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+          (fixes bug 1698523)
+        
+        :
+        
+        Fixed default values for POSTNETBean (so they match the values defined in DMM 708).  
+       Thanks to Dan Anderson.</description></item>      
+      <item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+        Fixed several problems in PDF417 (high-level encoding).  
+      </description></item>      
+      <item><title>MyProject code fix
+          (bug 1664266)
+        </title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+          (fixes bug 1664266)
+        
+        :
+        
+        Fixed a bug in DataMatrix (more specifically with EDIFACT encodation).  
+      </description></item>      
+      <item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+        Fixed a bug in the DataMatrix look-ahead test for high-level encoding.  
+      </description></item>      
+      <item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+        Fixed row-height setting for PDF417 which was completely ignored.  
+      </description></item>
+    
+    
+      <item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+        Fixed the registration of all barcode types in the FOP 0.20.5 extension. PDF417 and 
+        DataMatrix didn't work in 2.0 alpha 1.  
+      </description></item>      
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added support for orientation in the FOP 0.20.5 extension.
+      </description></item>      
+    
+    
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added a feature for applying a formatting pattern to the human-readable message (for
+        Interleaved 2 of 5, Code 39, Code 128 and Codabar).
+       Thanks to Dimitar Vlasev.</description></item>      
+      <item><title>MyProject code update</title><link>http://myproj.mygroup.org//changes.html</link><description>code update
+        by
+        jmaerki
+        :
+        
+        Adjusted SAXON 8 extension to versions 8.7.1 and later. This was necessary because of
+        backwards-incompatible changes in the extensions API after the 8.0 release.
+       Thanks to Robert Deeken.</description></item>      
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        buerkle
+        :
+        
+        Added an initial version of a EAN-128 implementation.
+      </description></item>      
+      <item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+        Bugfix: Skip generating metadata using ImageIO if it's not writable (as for image/bmp 
+        in JDK 1.5)
+      </description></item>      
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added an initial version of a DataMatrix implementation.
+      </description></item>      
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added a Royal Mail Customer Barcode implementation. This is a "four state" barcode.
+        The base implementation can also be used for other four state barcodes later.
+      </description></item>      
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added support for barcode orientation (0, 90, 180 and 270 degrees).
+      </description></item>      
+      <item><title>MyProject code update</title><link>http://myproj.mygroup.org//changes.html</link><description>code update
+        by
+        jmaerki
+        :
+        
+        Made logic handlers local to a barcode where appropriate to reflect reality 
+        and provide greater flexibility.
+      </description></item>      
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added a PDF417 implementation.
+      </description></item>      
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added extension for the redesigned Apache FOP.
+      </description></item>      
+      <item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+        For Code128, the font descender has to be added to the overall barcode height so
+        lower-case characters don't get clipped.
+      </description></item>      
+    
+    
+      <item><title>MyProject docs update</title><link>http://myproj.mygroup.org//changes.html</link><description>docs update
+        by
+        the_webmaestro
+        :
+        
+        Documentation updates.
+      </description></item>
+    
+    
+      <item><title>MyProject code update</title><link>http://myproj.mygroup.org//changes.html</link><description>code update
+        by
+        jmaerki
+        :
+        
+        For Interleaved 2 of 5, Code 39 and POSTNET, added the ability to include the generated 
+        checksum in the human-readable part. For Code39, the start and stop characters can also 
+        be enabled.
+      </description></item>
+      <item><title>MyProject code update</title><link>http://myproj.mygroup.org//changes.html</link><description>code update
+        by
+        jmaerki
+        :
+        
+        Barcode XML for the human-readable part is now different, all parameters sub-elements of 
+        a "human-readable" element.      
+      </description></item>
+      <item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+        POSTNET now displays the correct expected checksum character.
+      </description></item>
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added a sample applet to demonstrate barcodes on the website and the use of the Bean-API
+        in conjunction with Java2D/AWT-drawing.
+      </description></item>
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Barcode4J now has a Bean-style API making Avalon Framework an 
+        optional dependency. The build produces a new JAR, 
+        barcode4j-light.jar, which only contains the 
+        non-Avalon-Framework-dependant classes.
+      </description></item>
+      <item><title>MyProject legal update</title><link>http://myproj.mygroup.org//changes.html</link><description>legal update
+        by
+        jmaerki
+        :
+        
+        Barcode4J is now under the Apache License, Version 2.0. The Copyright name has been changed 
+        from Nicola Ken Barozzi to Jeremias Maerki. The latter was requested by Nicola Ken Barozzi 
+        and was approved through community decision. At least 95% percent of the code has been 
+        developed by Jeremias Maerki anyway.
+      </description></item>
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        SVG generators now create a viewBox and work with logical units 
+        instead of with real world units.
+      </description></item>
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Changed internal unit for font sizes from points to millimeters to 
+        faciliate SVG generation with a viewBox attribute.
+      </description></item>
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added an XSLT extension for SAXON 8.x.
+      </description></item>
+      <item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+        Fixed FOP extension to work with the AWT renderer.
+       Thanks to Bruno Marçal Dias.</description></item>
+      <item><title>MyProject code fix
+          (bug 942246)
+        </title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+          (fixes bug 942246)
+        
+        :
+        
+        Bug 942246: Fixed a bug in the default Code 128 encoder for FNC1 commands in codeset C.
+      </description></item>
+      <item><title>MyProject admin update</title><link>http://myproj.mygroup.org//changes.html</link><description>admin update
+        by
+        jmaerki
+        :
+        
+        "Krysalis Barcode" renamed to "Barcode4J" and moved to its own
+        SourceForge project.
+      </description></item>
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added support for font and font size (human-readable part) from barcode XML, the servlet and the example webapp.
+       Thanks to Andrew Nelson.</description></item>
+      <item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+        Fixed a mistake in the FOP extension so it accepts the message in both the "message" and 
+        "msg" attributes.
+      </description></item>
+    
+    
+      <item><title>MyProject code update</title><link>http://myproj.mygroup.org//changes.html</link><description>code update
+        by
+        jmaerki
+        :
+        
+        Allow lowercase a-z in Code39 symbols.
+      </description></item>
+      <item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+        Fixed bug where Krysalis Barcode failed under JDK 1.3.x when compiled under JDK 1.4.x (ImageIO not present).
+      </description></item>
+      <item><title>MyProject code update</title><link>http://myproj.mygroup.org//changes.html</link><description>code update
+        by
+        jmaerki
+        :
+        
+        Moved responsibility for instantiating a Canvas object from the user to the barcode implementation. Simplification for users.
+      </description></item>
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Display a full list of supported MIME types in the command line application.
+      </description></item>
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Add support for passing resolution information into the generated bitmaps.
+      </description></item>
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Extended Xalan extension to handle barcode XML just like the SAXON extension instead of using the generate function.
+      </description></item>
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added an extension for the SAXON XSLT Processor from Michael Kay.
+      </description></item>
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added FOP extension for FOP 0.20.5 and an experimental extension with native output support (for EPS and PDF, not going via SVG/Batik).
+      </description></item>
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Support for inches in lengths.
+       Thanks to Chris Dolphy.</description></item>
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added POSTNET implementation.
+       Thanks to Chris Dolphy.</description></item>
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Improved DOM to Avalon Configuration conversion.
+      </description></item>
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Extended sample webapp to support the new output formats.
+      </description></item>
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Full command-line interface.
+      </description></item>
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Add Java2D (Graphics2D/AWT) output support.
+      </description></item>
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Add bitmap output support.
+      </description></item>
+      <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added EPS (Encapsulated PostScript) output support.
+      </description></item>
+    
+    
+      
+		    <item><title>MyProject code update</title><link>http://myproj.mygroup.org//changes.html</link><description>code update
+        by
+        jmaerki
+        :
+        
+		      Improve usability of sample web application. Error result in
+		      a SVG that shows the detailed error message.
+		    </description></item>
+		    <item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+		      Reestablished JDK 1.3 compatibility. 
+		    </description></item>
+		    <item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+    		   Fixed OutOfMemoryError problem with long Code128 messages by 
+    		   rewriting the message encoder. The encoder is also factored
+    		   out as an interface so plugging in custom implementations is
+    		   possible.
+		    </description></item>
+		    <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+    		   Added support for supplementals (UPC and EAN barcodes).
+		    </description></item>
+		    <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+    		   Added an EAN-8 implementation.
+		    </description></item>
+          <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+            Added a UPC-E implementation.
+          </description></item>
+          <item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+            Fixed size calculation for Interleaved 2 of 5 and Code 128.
+          </description></item>
+          <item><title>MyProject code update</title><link>http://myproj.mygroup.org//changes.html</link><description>code update
+        by
+        jmaerki
+        :
+        
+            Nicer UPC-A painting.
+          </description></item>
+          <item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+            Fixed painting of symbols without human-readable message.
+          </description></item>
+          <item><title>MyProject code update</title><link>http://myproj.mygroup.org//changes.html</link><description>code update
+        by
+        jmaerki
+        :
+        
+            Improved checksum configuration (mode="add|check|ignore|auto" 
+            instead of add-checksum/enable="yes|no").
+          </description></item>
+          <item><title>MyProject code update</title><link>http://myproj.mygroup.org//changes.html</link><description>code update
+        by
+        jmaerki
+        :
+        
+            Refactored BarcodeUtil into a Singleton to make usage easier.
+          </description></item>
+          <item><title>MyProject docs add</title><link>http://myproj.mygroup.org//changes.html</link><description>docs add
+        by
+        jmaerki
+        :
+        
+            Added some initial content to the website.
+          </description></item>
+          <item><title>MyProject admin add</title><link>http://myproj.mygroup.org//changes.html</link><description>admin add
+        by
+        nicolaken
+        :
+        
+            Initial Import
+          </description></item>
+          
+        
+      
+    <item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added support for the Code 39 extended character set.
+      </description></item><item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added support for left, right, center and justify alignment of the human-readable part.
+      </description></item><item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added an implementation for USPS Intelligent Mail (4-State Customer Barcode).
+      </description></item><item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        buerkle
+        :
+        
+        Various improvements and bugfixes for EAN-128.  
+      </description></item><item><title>MyProject code fix
+          (bug 1945793)
+        </title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+          (fixes bug 1945793)
+        
+        :
+        
+        Bugfix for text painting at small text sized when anti-aliasing is disabled.
+      </description></item><item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+        Fixed two bugs concerning Base 256 encoding (DataMatrix).  
+      </description></item><item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added auto-sizing feature for PDF417 with an option to specify the width-to-height ration
+        for the symbol.
+       Thanks to Branko van Abel.</description></item><item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+        Improved Code128 encoding results in smaller barcodes in some cases.  
+       Thanks to Branko van Abel.</description></item><item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added support for Macro 05/06 character abbreviation (DataMatrix).
+      </description></item><item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+        Fixed pattern handling: Trailing pattern text was omitted.  
+      </description></item><item><title>MyProject code add</title><link>http://myproj.mygroup.org//changes.html</link><description>code add
+        by
+        jmaerki
+        :
+        
+        Added the possibility to restrict the generation of DataMatrix to square or rectangular
+        symbols.  
+       Thanks to Trevor Spiteri.</description></item><item><title>MyProject code fix
+          (bug 1698523)
+        </title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+          (fixes bug 1698523)
+        
+        :
+        
+        Fixed default values for POSTNETBean (so they match the values defined in DMM 708).  
+       Thanks to Dan Anderson.</description></item><item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+        Fixed several problems in PDF417 (high-level encoding).  
+      </description></item><item><title>MyProject code fix
+          (bug 1664266)
+        </title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+          (fixes bug 1664266)
+        
+        :
+        
+        Fixed a bug in DataMatrix (more specifically with EDIFACT encodation).  
+      </description></item><item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+        Fixed a bug in the DataMatrix look-ahead test for high-level encoding.  
+      </description></item><item><title>MyProject code fix</title><link>http://myproj.mygroup.org//changes.html</link><description>code fix
+        by
+        jmaerki
+        :
+        
+        Fixed row-height setting for PDF417 which was completely ignored.  
+      </description></item></channel></rss>

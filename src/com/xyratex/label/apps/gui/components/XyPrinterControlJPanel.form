@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.6" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="XyPrinterJLabel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="XyPrinterSelectionJSpinner" pref="149" max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="XyResolutionJLabel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="XyResolutionSelectionJSpinner" min="-2" pref="161" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="XyPrintJButton" min="-2" pref="107" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+              <Component id="XyPrinterJLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Component id="XyPrintJButton" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Component id="XyResolutionJLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Component id="XyResolutionSelectionJSpinner" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Component id="XyPrinterSelectionJSpinner" alignment="3" min="-2" pref="18" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JSpinner" name="XyPrinterSelectionJSpinner">
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="XyPrinterSelectionJSpinnerStateChanged"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JSpinner" name="XyResolutionSelectionJSpinner">
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="XyResolutionSelectionJSpinnerStateChanged"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="XyPrinterJLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Printer"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="XyResolutionJLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="resolution"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="XyPrintJButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Print"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="XyPrintJButtonActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>

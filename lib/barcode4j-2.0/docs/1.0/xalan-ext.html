@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="Apache Forrest" name="Generator">
+<meta name="Forrest-version" content="0.9-dev">
+<meta name="Forrest-skin-name" content="pelt">
+<title>Instructions for the Xalan extension</title>
+<link type="text/css" href="../skin/basic.css" rel="stylesheet">
+<link media="screen" type="text/css" href="../skin/screen.css" rel="stylesheet">
+<link media="print" type="text/css" href="../skin/print.css" rel="stylesheet">
+<link type="text/css" href="../skin/profile.css" rel="stylesheet">
+<script src="../skin/getBlank.js" language="javascript" type="text/javascript"></script><script src="../skin/getMenu.js" language="javascript" type="text/javascript"></script><script src="../skin/fontsize.js" language="javascript" type="text/javascript"></script>
+<link rel="shortcut icon" href="../images/favicon.ico">
+</head>
+<body onload="init()">
+<script type="text/javascript">ndeSetTextSize();</script>
+<div id="top">
+<!--+
+    |header
+    +-->
+<div class="header">
+<!--+
+    |start group logo
+    +-->
+<div class="grouplogo">
+<a href="http://barcode4j.sourceforge.net/"><img class="logoImage" alt="Barcode4J" src="../resources/images/barcode4j-logo.gif" title="A free barcode generator written in Java"></a>
+</div>
+<!--+
+    |end group logo
+    +-->
+<!--+
+    |start Project Logo
+    +-->
+<div class="projectlogo">
+<a href="http://barcode4j.sourceforge.net/"><img class="logoImage" alt="" src="../skin/images/spacer.gif" title=""></a>
+</div>
+<!--+
+    |end Project Logo
+    +-->
+<!--+
+    |start Search
+    +-->
+<div class="searchbox">
+<form action="http://www.google.com/search" method="get" class="roundtopsmall">
+<input value="barcode4j.sourceforge.net" name="sitesearch" type="hidden"><input onFocus="getBlank (this, 'Search the site with google');" size="25" name="q" id="query" type="text" value="Search the site with google">&nbsp; 
+                    <input name="Search" value="Search" type="submit">
+</form>
+</div>
+<!--+
+    |end search
+    +-->
+<!--+
+    |start Tabs
+    +-->
+<ul id="tabs">
+<li>
+<a class="unselected" href="../index.html">Home</a>
+</li>
+<li class="current">
+<a class="selected" href="../1.0/index.html">Version 1.0</a>
+</li>
+<li>
+<a class="unselected" href="../2.0/index.html">Version 2.0</a>
+</li>
+</ul>
+<!--+
+    |end Tabs
+    +-->
+</div>
+</div>
+<div id="main">
+<div id="publishedStrip">
+<!--+
+    |start Subtabs
+    +-->
+<div id="level2tabs"></div>
+<!--+
+    |end Endtabs
+    +-->
+<script type="text/javascript"><!--
+document.write("Last Published: " + document.lastModified);
+//  --></script>
+</div>
+<!--+
+    |breadtrail
+    +-->
+<div class="breadtrail">
+<a href="http://www.sf.net/projects/barcode4j/">SourceForge Project Page</a><script src="../skin/breadcrumbs.js" language="JavaScript" type="text/javascript"></script>
+</div>
+<!--+
+    |start Menu, mainarea
+    +-->
+<!--+
+    |start Menu
+    +-->
+<div id="menu">
+<div onclick="SwitchMenu('menu_selected_1.1', '../skin/')" id="menu_selected_1.1Title" class="menutitle" style="background-image: url('../skin/images/chapter_open.gif');">Version 1.0</div>
+<div id="menu_selected_1.1" class="selectedmenuitemgroup" style="display: block;">
+<div class="menuitem">
+<a href="../1.0/index.html">Overview</a>
+</div>
+<div onclick="SwitchMenu('menu_1.1.2', '../skin/')" id="menu_1.1.2Title" class="menutitle">Getting started</div>
+<div id="menu_1.1.2" class="menuitemgroup">
+<div class="menuitem">
+<a href="../1.0/building.html">Build&nbsp;Barcode4J</a>
+</div>
+<div class="menuitem">
+<a href="../1.0/running.html">Run&nbsp;Barcode4J</a>
+</div>
+</div>
+<div class="menuitem">
+<a href="../1.0/barcode-xml.html">The Barcode XML Format</a>
+</div>
+<div class="menuitem">
+<a href="../1.0/output-formats.html">Output Formats</a>
+</div>
+<div class="menuitem">
+<a href="../1.0/design.html">Design</a>
+</div>
+<div class="menuitem">
+<a href="http://barcode4j.sourceforge.net/javadocs/index.html">Javadocs</a>
+</div>
+<div onclick="SwitchMenu('menu_1.1.7', '../skin/')" id="menu_1.1.7Title" class="menutitle">Scenarios</div>
+<div id="menu_1.1.7" class="menuitemgroup">
+<div class="menuitem">
+<a href="../1.0/xsl-fo.html">XSL-FO</a>
+</div>
+<div class="menuitem">
+<a href="../1.0/svg-dom.html">SVG DOM</a>
+</div>
+</div>
+<div onclick="SwitchMenu('menu_selected_1.1.8', '../skin/')" id="menu_selected_1.1.8Title" class="menutitle" style="background-image: url('../skin/images/chapter_open.gif');">Creating&nbsp;Barcodes</div>
+<div id="menu_selected_1.1.8" class="selectedmenuitemgroup" style="display: block;">
+<div class="menuitem">
+<a href="../1.0/fop-ext.html">...with FOP</a>
+</div>
+<div class="menupage">
+<div class="menupagetitle">...with Xalan-J</div>
+</div>
+<div class="menuitem">
+<a href="../1.0/saxon-ext.html">...with SAXON</a>
+</div>
+<div class="menuitem">
+<a href="../1.0/servlet.html">...with a Servlet</a>
+</div>
+<div class="menuitem">
+<a href="../1.0/cli.html">...from the Command Line</a>
+</div>
+<div class="menuitem">
+<a href="../1.0/embedding.html">...embedding in Java (XML API)</a>
+</div>
+<div class="menuitem">
+<a href="../1.0/embedding-bean.html">...embedding in Java (Bean API)</a>
+</div>
+</div>
+</div>
+<div id="credit"></div>
+<div id="roundbottom">
+<img style="display: none" class="corner" height="15" width="15" alt="" src="../skin/images/rc-b-l-15-1body-2menu-3menu.png"></div>
+<!--+
+  |alternative credits
+  +-->
+<div id="credit2"></div>
+</div>
+<!--+
+    |end Menu
+    +-->
+<!--+
+    |start content
+    +-->
+<div id="content">
+<div title="Portable Document Format" class="pdflink">
+<a class="dida" href="xalan-ext.pdf"><img alt="PDF -icon" src="../skin/images/pdfdoc.gif" class="skin"><br>
+        PDF</a>
+</div>
+<h1>Instructions for the Xalan extension</h1>
+<div id="front-matter">
+<div id="minitoc-area">
+<ul class="minitoc">
+<li>
+<a href="#Introduction">Introduction</a>
+</li>
+<li>
+<a href="#Using+the+barcode+extension+for+Apache+Xalan">Using the barcode extension for Apache Xalan</a>
+</li>
+<li>
+<a href="#ext-func">Using the "generate" function</a>
+</li>
+<li>
+<a href="#ext-elem">Using the barcode extension element</a>
+</li>
+</ul>
+</div>
+</div>
+    
+<a name="N10014"></a><a name="Introduction"></a>
+<h2 class="underlined_10">Introduction</h2>
+<div class="section">
+<p>
+        This page describes how to generate barcodes in 
+        <a class="external" href="http://www.w3.org/Graphics/SVG">SVG format</a> within an XSLT stylesheet that is 
+        processed with <a class="external" href="http://xml.apache.org/xalan-j/">Apache Xalan-J</a>.
+      </p>
+</div>
+    
+<a name="N10026"></a><a name="Using+the+barcode+extension+for+Apache+Xalan"></a>
+<h2 class="underlined_10">Using the barcode extension for Apache Xalan</h2>
+<div class="section">
+<p>This package contains an extension for <a class="external" href="http://xml.apache.org/xalan-j/">Apache Xalan</a> for 
+        generating barcodes in SVG format.
+      </p>
+<p>To make to barcode extension available in your XSLT stylesheets, do the following:</p>
+<ul>
+        
+<li>Add <span class="codefrag">barcode4j.jar</span> to the classpath.</li>
+        
+<li>Add the following namespace declaration to the root element of your XSLT stylesheet: 
+          <strong><span class="codefrag">xmlns:barcode="org.krysalis.barcode4j.xalan.BarcodeExt"</span></strong>
+        
+</li>
+        
+<li>Add the barcode namespace prefix to the extension element prefixes:
+          <strong><span class="codefrag">extension-element-prefixes="barcode"</span></strong>
+        
+</li>
+      
+</ul>
+<p>Here's an example:</p>
+<pre class="code">
+&lt;xsl:stylesheet version="1.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+    xmlns:fo="http://www.w3.org/1999/XSL/Format" 
+    xmlns:barcode="org.krysalis.barcode4j.xalan.BarcodeExt" 
+    extension-element-prefixes="barcode"&gt;</pre>
+</div>
+    
+<a name="N10055"></a><a name="ext-func"></a>
+<h2 class="underlined_10">Using the "generate" function</h2>
+<div class="section">
+<p>To generate a barcode use the <strong><span class="codefrag">barcode:generate(NodeList, String)</span></strong> function:</p>
+<ol>
+        
+<li>NodeList: the barcode configuration (See example below and the <a href="barcode-xml.html">Barcode XML format</a>).</li>
+        
+<li>String: the message to be encoded</li>
+      
+</ol>
+<p>Here's an example:</p>
+<pre class="code">
+  &lt;fo:block&gt;
+    &lt;fo:instream-foreign-object&gt;
+      &lt;xsl:variable name="barcode-cfg"&gt;
+        &lt;barcode&gt;
+          &lt;code128&gt;
+            &lt;height&gt;8mm&lt;/height&gt;
+          &lt;/code128&gt;
+        &lt;/barcode&gt;
+      &lt;/xsl:variable&gt;
+      &lt;xsl:copy-of select="barcode:generate($barcode-cfg, '0123456789')"/&gt;
+    &lt;/fo:instream-foreign-object&gt;
+  &lt;/fo:block&gt;</pre>
+</div>
+    
+<a name="N10077"></a><a name="ext-elem"></a>
+<h2 class="underlined_10">Using the barcode extension element</h2>
+<div class="section">
+<div class="warning">
+<div class="label">Warning</div>
+<div class="content">
+        Xalan has a <a class="external" href="http://issues.apache.org/jira/browse/XALANJ-1706">bug</a>
+        that causes a NullPointerException in FOP. Please use the extension function above until 
+        a new Xalan version is release. The bug is fixed in the codebase but no release has
+        happened since.
+      </div>
+</div>
+<p>
+        To generate a barcode, simply put a barcode element in the namespace declared above 
+        into your stylesheet. The barcode element currently takes one attribute: 
+        <strong>message</strong>.
+      </p>
+<p>Here's an example:</p>
+<pre class="code">
+  &lt;fo:block&gt;
+    &lt;fo:instream-foreign-object&gt;
+      &lt;barcode:barcode message="0123456789"&gt;
+        &lt;barcode:code128&gt;
+          &lt;barcode:height&gt;8mm&lt;/barcode:height&gt;
+        &lt;/barcode:code128&gt;
+      &lt;/barcode:barcode&gt;
+    &lt;/fo:instream-foreign-object&gt;
+  &lt;/fo:block&gt;</pre>
+<p>
+        The XML syntax used within the barcode element is the <a href="barcode-xml.html">Barcode XML</a>.
+      </p>
+</div>
+  
+<p align="right">
+<font size="-2">by&nbsp;Jeremias M&auml;rki</font>
+</p>
+</div>
+<!--+
+    |end content
+    +-->
+<div class="clearboth">&nbsp;</div>
+</div>
+<div id="footer">
+<!--+
+    |start bottomstrip
+    +-->
+<div class="lastmodified">
+<script type="text/javascript"><!--
+document.write("Last Published: " + document.lastModified);
+//  --></script>
+</div>
+<div class="copyright">
+        Copyright &copy;
+         2003-2008 The Barcode4J Project.</div>
+<div class="host">
+<a href="http://sourceforge.net"><img class="logoImage" alt="" src="http://sourceforge.net/sflogo.php?&group_id=36516&type=1"></a>
+</div>
+<!--+
+    |end bottomstrip
+    +-->
+</div>
+</body>
+</html>

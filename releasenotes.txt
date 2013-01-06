@@ -1,0 +1,3 @@
+1.0 alpha 1: initial release. There is an issue where some of the third party libraries do not compile due to missing dependencies on other libraries. I expect to resolve these by updating these 3rd party library versions or finding the dependencies, whichever solves the problem. If you are having this problem, then the above would be a suggested solution.
+
+The next release will fix this.
